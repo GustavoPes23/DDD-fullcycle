@@ -1,4 +1,5 @@
 import Address from "../value-object/address";
+import CustomerInterface from "./customer.interface";
 
 //modelagem do domínio rico expressa o negócio
 //deve se representar o estado correto e atual do elemento
@@ -21,7 +22,7 @@ infra - mundo externo
  -- customer.ts(get, set)
 */
 
-export default class Customer {
+export default class Customer implements CustomerInterface {
     //id serve para identificar o Customer no sistema e não no banco
     private _id: string;
     private _name: string;
